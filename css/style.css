@@ -1,0 +1,138 @@
+
+/*전체 스타일링*/
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 2px 2px black
+}
+
+/*범용 스타일링*/
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 700%;
+    margin-bottom: 2rem;
+    text-shadow: 5px 5px black;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 1.125rem;
+}
+
+.container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*메인 이미지 스타일링*/
+.hero {
+    background-image: url(../img/bg1.jpg);
+    text-align: center;
+    padding-top: 30vh;
+    height: 700px;
+}
+
+
+/*소개메뉴 스타일링*/
+.menu{
+    background-image: url(../img/bg2.jpeg);
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.wrapper ul{
+    font-size: 1.5rem;
+    list-style-type: none;
+    margin-bottom: .5rem;
+    line-height: 1.7;
+}
+
+
+/*contact 스타일링*/
+.contact {
+    background-image: url(../img/bg3.webp);
+    text-align: center;
+    padding-top: 20vh;
+}
+
+.btn{
+    background: #555;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 3.5rem;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 2rem 0 2.25rem;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: #777;
+}
+
+.contact-sns{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0 0 0 0;
+}
+
+.contact-sns a{
+    background: #fff;
+    width: 3.75rem;
+    height: 3rem;
+    display: inline-block;
+    margin: 0 .5rem;
+    border-radius: 30%;
+    font-size: 2rem;
+    padding: .75rem 0 0 .125rem;
+    color: #555;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.contact-sns a:hover{
+    background: rgba(255,255,255,.5);
+}
+
+.contact h2.title{
+    margin-bottom: 0;
+}
+
+
+/*모바일 사이즈*/
+@media (max-width: 700px) {
+    .title {
+        font-size: 4rem;
+    }
+    p {
+        padding: 0 1rem;
+    }
+    p, .menu-list li {
+        font-size: 1rem;
+    }
+}
